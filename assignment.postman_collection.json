@@ -1,0 +1,270 @@
+{
+	"variables": [],
+	"info": {
+		"name": "assignment",
+		"_postman_id": "83a408ea-7aa7-d42a-639a-ac62f8cbf54a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Pradeep D\",\n\t\"email\" : \"pradeep720@gmail.com\",\n\t\"password\" : \"test1234\",\n\t\"c_password\" : \"test1234\"\n}"
+				},
+				"description": "user can register using this api."
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"pradeep720@gmail.com\",\n\t\"password\" : \"test1234\"\n}"
+				},
+				"description": "User can login using this api"
+			},
+			"response": []
+		},
+		{
+			"name": "mail confirmation",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/confirmEmail",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"code\" : \"1556715960617\"\n}"
+				},
+				"description": "user email can be verify using this api"
+			},
+			"response": []
+		},
+		{
+			"name": "List company",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/getCompany",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "user can get all the company list using this app"
+			},
+			"response": []
+		},
+		{
+			"name": "Search and Sort",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/searchAndSort",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sortBy\" : \"\",\n\t\"query\" : \"my\"\n}"
+				},
+				"description": "user can search or sort the company list."
+			},
+			"response": []
+		},
+		{
+			"name": "add to favourite list",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/addFavourite",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY1YmY3YWVkYzRjY2FjZGVmNjc3ZDI3NTlhM2MwN2YyNDVkYjc2Y2FlZjA3ZmI4Y2VhZmM4YmM3OGFkMjNkMGZiODgyYjA2YTMyMzUwMWNkIn0.eyJhdWQiOiIxIiwianRpIjoiZjViZjdhZWRjNGNjYWNkZWY2NzdkMjc1OWEzYzA3ZjI0NWRiNzZjYWVmMDdmYjhjZWFmYzhiYzc4YWQyM2QwZmI4ODJiMDZhMzIzNTAxY2QiLCJpYXQiOjE1NTY2OTQ0NzIsIm5iZiI6MTU1NjY5NDQ3MiwiZXhwIjoxNTg4MzE2ODcyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZSbxasBWgxkLRsgdwgMRB1bhpzJdtyd9unyVsK--G1EPwnfQpcuTEv1mJBLMjI00az8RCj8Wdd2iN4zaEgh0RPmkneEgw_GwNvBqX3D8zB3Puh4izTQy72XqLfSqv_aEYJGE72yAw1fa3py8Cb0D83MN4Mh1pitd3iMPgNdOH4MD6a-ME7qfz8wrjqEYJHxIWAdBr0P-CAJR8Ku1ebHkS1_zY8RdLMhtjkOJSrSQ7WNgbneA_QMrMRCKVUhHzDnw9AM-UmeJcbF3Q3SDsacp0l0wB1fWGKwUtg94j_lVdKsTtuOzpyBu0bpzPM6sHzbvzm0MLFbs_wJKg5TPZkLB5t0c-jUtwNP4R5mWGGkfBHPNSevnezVNqmUtTpkmuF6n6pvuyeWP_hTmG4rSsLs08uqYjK908KA0qQgkU3lgqwCLZ_-TDmy3WPj3w0ipV9Uou1lHfKmsowH5R7rE408CgoimRi8_KHWJnMZpQ4ZEr_usYxOv_I1V05Zqg4lFC1XlU1sXcfrnqAbrliAom2QQvRvCKjzKmaI3mgoMt80RZVhr15JPYmAl63paM0TfDOSXxvi6X6G2cQW40jnbUDx6X2ZgFIFMDaQYAzFGn4BPn0Oy3jsP6rsmCBfLEF-xmUY5kO458AszgEjZNIkEklKccdK4ZIWYldY2o7OsPtN7Xoo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 2\n}"
+				},
+				"description": "user can add the product to hi favouret list"
+			},
+			"response": []
+		},
+		{
+			"name": "List favourit ",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/getFavourite",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY1YmY3YWVkYzRjY2FjZGVmNjc3ZDI3NTlhM2MwN2YyNDVkYjc2Y2FlZjA3ZmI4Y2VhZmM4YmM3OGFkMjNkMGZiODgyYjA2YTMyMzUwMWNkIn0.eyJhdWQiOiIxIiwianRpIjoiZjViZjdhZWRjNGNjYWNkZWY2NzdkMjc1OWEzYzA3ZjI0NWRiNzZjYWVmMDdmYjhjZWFmYzhiYzc4YWQyM2QwZmI4ODJiMDZhMzIzNTAxY2QiLCJpYXQiOjE1NTY2OTQ0NzIsIm5iZiI6MTU1NjY5NDQ3MiwiZXhwIjoxNTg4MzE2ODcyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZSbxasBWgxkLRsgdwgMRB1bhpzJdtyd9unyVsK--G1EPwnfQpcuTEv1mJBLMjI00az8RCj8Wdd2iN4zaEgh0RPmkneEgw_GwNvBqX3D8zB3Puh4izTQy72XqLfSqv_aEYJGE72yAw1fa3py8Cb0D83MN4Mh1pitd3iMPgNdOH4MD6a-ME7qfz8wrjqEYJHxIWAdBr0P-CAJR8Ku1ebHkS1_zY8RdLMhtjkOJSrSQ7WNgbneA_QMrMRCKVUhHzDnw9AM-UmeJcbF3Q3SDsacp0l0wB1fWGKwUtg94j_lVdKsTtuOzpyBu0bpzPM6sHzbvzm0MLFbs_wJKg5TPZkLB5t0c-jUtwNP4R5mWGGkfBHPNSevnezVNqmUtTpkmuF6n6pvuyeWP_hTmG4rSsLs08uqYjK908KA0qQgkU3lgqwCLZ_-TDmy3WPj3w0ipV9Uou1lHfKmsowH5R7rE408CgoimRi8_KHWJnMZpQ4ZEr_usYxOv_I1V05Zqg4lFC1XlU1sXcfrnqAbrliAom2QQvRvCKjzKmaI3mgoMt80RZVhr15JPYmAl63paM0TfDOSXxvi6X6G2cQW40jnbUDx6X2ZgFIFMDaQYAzFGn4BPn0Oy3jsP6rsmCBfLEF-xmUY5kO458AszgEjZNIkEklKccdK4ZIWYldY2o7OsPtN7Xoo",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "USer can be get the favourit list"
+			},
+			"response": []
+		},
+		{
+			"name": "remove favourit item ",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/removeFavourite",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY1YmY3YWVkYzRjY2FjZGVmNjc3ZDI3NTlhM2MwN2YyNDVkYjc2Y2FlZjA3ZmI4Y2VhZmM4YmM3OGFkMjNkMGZiODgyYjA2YTMyMzUwMWNkIn0.eyJhdWQiOiIxIiwianRpIjoiZjViZjdhZWRjNGNjYWNkZWY2NzdkMjc1OWEzYzA3ZjI0NWRiNzZjYWVmMDdmYjhjZWFmYzhiYzc4YWQyM2QwZmI4ODJiMDZhMzIzNTAxY2QiLCJpYXQiOjE1NTY2OTQ0NzIsIm5iZiI6MTU1NjY5NDQ3MiwiZXhwIjoxNTg4MzE2ODcyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZSbxasBWgxkLRsgdwgMRB1bhpzJdtyd9unyVsK--G1EPwnfQpcuTEv1mJBLMjI00az8RCj8Wdd2iN4zaEgh0RPmkneEgw_GwNvBqX3D8zB3Puh4izTQy72XqLfSqv_aEYJGE72yAw1fa3py8Cb0D83MN4Mh1pitd3iMPgNdOH4MD6a-ME7qfz8wrjqEYJHxIWAdBr0P-CAJR8Ku1ebHkS1_zY8RdLMhtjkOJSrSQ7WNgbneA_QMrMRCKVUhHzDnw9AM-UmeJcbF3Q3SDsacp0l0wB1fWGKwUtg94j_lVdKsTtuOzpyBu0bpzPM6sHzbvzm0MLFbs_wJKg5TPZkLB5t0c-jUtwNP4R5mWGGkfBHPNSevnezVNqmUtTpkmuF6n6pvuyeWP_hTmG4rSsLs08uqYjK908KA0qQgkU3lgqwCLZ_-TDmy3WPj3w0ipV9Uou1lHfKmsowH5R7rE408CgoimRi8_KHWJnMZpQ4ZEr_usYxOv_I1V05Zqg4lFC1XlU1sXcfrnqAbrliAom2QQvRvCKjzKmaI3mgoMt80RZVhr15JPYmAl63paM0TfDOSXxvi6X6G2cQW40jnbUDx6X2ZgFIFMDaQYAzFGn4BPn0Oy3jsP6rsmCBfLEF-xmUY5kO458AszgEjZNIkEklKccdK4ZIWYldY2o7OsPtN7Xoo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 2\n}"
+				},
+				"description": "user can remove an item from his fav list."
+			},
+			"response": []
+		},
+		{
+			"name": "Reset password",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/resetPassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"test123@test.com\"\n}"
+				},
+				"description": "User can generate opt using this api."
+			},
+			"response": []
+		},
+		{
+			"name": "reset complete",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/completeReset",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 1,\n\t\"password\" : \"test4321\",\n\t\"c_password\" : \"test4321\",\n\t\"otp\" : 8579\n}"
+				},
+				"description": "user can complete the reset pass word function using this app . "
+			},
+			"response": []
+		}
+	]
+}

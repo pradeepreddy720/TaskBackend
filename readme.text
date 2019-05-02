@@ -1,0 +1,8 @@
+This application is provide the web service for simple application.
+
+step 1 : download the file and put it in your vertiul host or hddoc file.
+step 2 : change the .env file data realeted to database configuration(create a database in your local system and update the data in it).
+step 3 :  Open command prompt and move the your project direct and run these commands
+          >> php artisan migrate. 
+          >> then run "php artisan serve" command to start serving your web services.
+step 4 : find the api collection file(assignment.postman_collection) which will provided you api information.
